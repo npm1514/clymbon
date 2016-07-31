@@ -10,15 +10,15 @@ var userModel = new mongoose.Schema({
     userHeadline: String,
     likes: Number,
     comments: [{
-      user: {type: mongoose.Schema.types.ObjectId, ref: 'Users'},
+      user: {type: mongoose.Schema.Types.ObjectId, ref: 'Users'},
       body: String
     }],
     expertedActivities: [{
       activity: String,
       yearsOfExperience: Number
     }],
-    tripsCreated: [{type: mongoose.Schema.types.ObjectId, ref: 'Trips'}],
-    tripsScheduledToGoOn: [{type: mongoose.Schema.types.ObjectId, ref: 'Trips'}],
+    tripsCreated: [{type: mongoose.Schema.Types.ObjectId, ref: 'Trips'}],
+    tripsScheduledToGoOn: [{type: mongoose.Schema.Types.ObjectId, ref: 'Trips'}],
     guide: Boolean,
     admin: {type: Boolean, default: false}
 });

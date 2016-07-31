@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 
 var tripModel = new mongoose.Schema({
-    guideObject: {type: mongoose.Schema.types.ObjectId, ref: "User"},
+    guideObject: {type: mongoose.Schema.Types.ObjectId, ref: "User"},
     locationObject: {
       destinationName: String,
       city: String,
@@ -27,7 +27,7 @@ var tripModel = new mongoose.Schema({
     tripDates: [{
       date: Date,
       scheduled: Boolean,
-      scheduledWithWhom: {type: mongoose.Schema.types.ObjectId, ref: "User"}
+      scheduledWithWhom: {type: mongoose.Schema.Types.ObjectId, ref: "User"}
     }],
     tripOptions:[{
       optionSpecifics: String,

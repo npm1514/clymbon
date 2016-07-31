@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html ng-app="clymbon">
+  <head>
+    <meta charset="utf-8">
+    <title>Clymb-On Adventure</title>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster+Two:700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type='text/css'>
+    <link rel="stylesheet" href="styles.css" >
+
+  </head>
+  <body ng-controller="mainCtrl">
+    <header>
+      <a ui-sref="home">
+        <div class="logo">
+          <img src="./images/Group.png"/><span class="logotext">Clymb-On Adventures</span>
+        </div>
+      </a>
+      <div class="nav">
+        <h3 class="navlinks">
+          <a href="">Search for Trips</a>
+          <a href="">Become a Guide</a>
+          <a href="">Messages</a>
+          <a ng-hide="loggedin" href="">Login/Sign-Up</a>
+          <a ng-show="loggedin" href="">Profile</a>
+          <i class="fa fa-bars hamburger"></i>
+        </h3>
+        <i ng-hide="menuopen" ng-click="menuopen=true" class="fa fa-bars fa-2x hamburger"></i>
+        <div class="sidemenu" ng-show="menuopen">
+            <div class="hamburgercontain"><i ng-click="menuopen=false" class="fa fa-bars fa-2x hamburger"></i></div>
+              <a href=""><div><h3>Search for Trips</h3></div></a>
+              <a href=""><div><h3>Become a Guide</h3></div></a>
+              <a href=""><div><h3>Messages</h3></div></a>
+              <a href=""><div ng-hide="loggedin"><h3>Login/Sign-Up</h3></div></a>
+              <a href=""><div ng-show="loggedin"><h3>Profile</h3></div></a>
+        </div>
+
+
+      </div>
+    </header>
+    <ui-view></ui-view>
+    <footer>
+      <div class="directory">
+        <div class="leftdirectory">
+          <h3>Company</h3>
+          <a href="#"><h6>About Us</h6></a>
+          <a href="#"><h6>Contact</h6></a>
+          <a href="#"><h6>Careers</h6></a>
+          <a href="#"><h6>Affiliates</h6></a>
+        </div>
+        <div class="middledirectory">
+          <h3>Personal Profile</h3>
+          <a href="#"><h6>Profile</h6></a>
+          <a href="#"><h6>Track Trip</h6></a>
+          <a href="#"><h6>Share Trip</h6></a>
+          <a href="#"><h6>Change Password</h6></a>
+        </div>
+        <div class="rightdirectory">
+          <h3>Customer Support</h3>
+          <a href="#"><h6>Privacy Policy</h6></a>
+          <a href="#"><h6>Terms of Service</h6></a>
+          <a href="#"><h6>Cancellation</h6></a>
+          <a href="#"><h6>FAQ</h6></a>
+        </div>
+      </div>
+      <hr>
+      <div class="socialmedia">
+        <a href="#"><i class="fa fa-facebook-square fa-2x"></i></a>
+        <a href="#"><i class="fa fa-twitter-square fa-2x"></i></a>
+        <a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a>
+        <a href="#"><i class="fa fa-github-square fa-2x"></i></a>
+      </div>
+      <div class="copyright">
+        <h6>© Clymb-On Adventures 2016</h6>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+    <script src="app.js" type="text/javascript"></script>
+    <script src="mainCtrl.js" type="text/javascript"></script>
+    <script src="mainServ.js" type="text/javascript"></script>
+  </body>
+</html>

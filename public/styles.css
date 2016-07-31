@@ -1,0 +1,322 @@
+body {
+  font-family: "Oswald";
+  margin: 0;
+  color: #fff;
+  width: 100vw;
+  height: max-content;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  width: max-content;
+  height: max-content;
+}
+
+a:hover, a h6:hover {
+  color: rgb(52, 196, 196);
+  cursor: pointer;
+}
+
+h1, h3,h6, p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h6  {
+  font-size: 15px;
+  color: rgba(56, 56, 56, 0.8);
+}
+
+p {
+  font-size: 15px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 70px;
+  background-color: rgba(56, 56, 56, 0.88);
+}
+
+.logo, .nav {
+  position: fixed;
+  top: 15px;
+}
+
+.logo {
+  left: 15px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.logotext {
+  font-family: "Lobster Two";
+  font-size: 40px;
+  position: relative;
+  left: 15px;
+  bottom: 6px;
+}
+
+.nav {
+  right: 15px;
+}
+
+.nav a {
+  margin: 0 10px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.sidemenu {
+  position: fixed;
+  top:0;
+  right: 0;
+  margin: 0;
+  height: 100vh;
+  width: 200px;
+  background-color: rgba(56, 56, 56, 0.95);
+  text-align: center;
+}
+
+.sidemenu i{
+  float: right;
+}
+
+.sidemenu div {
+  height: 100px;
+  width: 100%;
+  border: 1px solid #fff;
+}
+
+.sidemenu div h3 {
+  padding-top: 30px;
+}
+
+.sidemenu .hamburgercontain {
+  position: relative;
+  top: 15px;
+  right: 15px;
+  height: 50px;
+  border: none;
+}
+
+.home {
+  width: 100vw;
+  z-index: -1;
+}
+
+.banner {
+  width: 100vw;
+  height: 600px;
+  background-image: url("./images/beachpic.jpeg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.spacer {
+  height: 290px;
+}
+
+.steps {
+  background-color: rgb(89, 89, 89);
+  width: 100vw;
+  height: max-content;
+  border-top: 2px solid rgba(56, 56, 56, 0.88);
+  border-bottom: 2px solid rgba(56, 56, 56, 0.88);
+}
+
+.containsteps {
+  width: 80vw;
+  margin: auto;
+  height: max-content;
+}
+
+.step {
+  border-left: 2px solid rgba(56, 56, 56, 0.88);
+  border-right: 2px solid rgba(56, 56, 56, 0.88);
+  height: 100px;
+  width: 30%;
+  display: inline-block;
+  text-align: center;
+}
+
+.step h3 {
+  margin-top: 10px;
+}
+
+.advantureoptions {
+  width: 100vw;
+  height: 800px;
+}
+
+.optiontop {
+  width: 100vw;
+  height: 400px;
+}
+
+.optionbottom {
+  width: 100vw;
+  height: 400px;
+}
+
+.smaller, .larger {
+  float: left;
+}
+
+.smaller {
+  width: 35vw;
+  height: 400px;
+}
+
+.larger {
+  width: 65vw;
+  height: 400px;
+}
+
+#homepic1, #homepic2, #homepic3, #homepic4, #selectionlink1, #selectionlink2, #selectionlink3 {
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+#homepic1 {
+  background-image: url("./images/kayak.jpeg");
+}
+
+#homepic2 {
+  background-image: url("./images/desert.jpeg");
+  background-position: right;
+}
+
+#homepic3 {
+  background-image: url("./images/climb.jpeg");
+}
+
+#homepic4 {
+  background-image: url("./images/cliff.jpeg");
+}
+
+.whatareyouwaitingfor {
+  text-align: center;
+  background-color: rgb(89, 89, 89);
+  padding: 25px;
+}
+
+.selectionlinks {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+}
+
+.selectionlink {
+  height: 400px;
+  width: 400px;
+  margin: 10px;
+}
+
+#selectionlink1 {
+  background-image: url("./images/parasail.jpeg");
+}
+
+#selectionlink2 {
+  background-image: url("./images/bikefire.jpeg");
+}
+
+#selectionlink3 {
+  background-image: url("./images/antelope.jpeg");
+}
+
+footer {
+  height: max-content;
+  width: 100vw;
+  background-color: rgb(89, 89, 89);
+}
+
+.directory {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: max-content;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+}
+
+.leftdirectory, .middledirectory, .rightdirectory {
+  height: max-content;
+  width: 200px;
+  text-align: center;
+  margin: 10px;
+}
+
+.socialmedia, .copyright {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.socialmedia i {
+  margin: 5px;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+  .logotext {
+    display: none;
+  }
+  .containsteps {
+    width: 100vw;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navlinks {
+    display: none;
+  }
+
+}
+@media only screen and (max-width: 600px){
+  .step {
+    width: 100vw;
+    border: 2px solid rgba(56, 56, 56, 0.88);
+  }
+
+  .larger,.smaller {
+    width: 100vw;
+  }
+}
+
+@media only screen and (min-width: 730px){
+  .sidemenu {
+    display: none;
+  }
+}
